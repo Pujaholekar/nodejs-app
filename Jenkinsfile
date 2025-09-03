@@ -48,7 +48,7 @@ pipeline {
                         aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
                         aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
                         aws configure set default.region ${AWS_REGION}
-                        aws ecs update-service --cluster nodejs-ecs-cluster --service nodejs-service --force-new-deployment --region ${AWS_REGION}
+                        aws ecs update-service --cluster nodejs-ecs-cluster --service nodejs-task-service-ztxelr2b --force-new-deployment --region ${AWS_REGION}
                     """
                 }
             }
